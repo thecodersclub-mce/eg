@@ -1,0 +1,188 @@
+
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Header */
+.blue-container {
+    width: 100%;
+    background-color: #00408f;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+/* Centered Content */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers both vertically and horizontally */
+    height: 80vh; /* Adjusted height to avoid footer overlap */
+    width: 100%;
+    text-align: center;
+}
+
+.left-aligned {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.favicon-logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Titles */
+.titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.college-name {
+    font-size: 16px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.site-title {
+    font-size: 14px;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Label & Button Section */
+.label-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.label-button-container h3 {
+    background-color: #e3f2fd;
+    color: #00408f;
+    padding: 6px 12px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+}
+
+/* Button Row */
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #00408f;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1E88E5;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #00408f;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Improved spacing */
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers text and logo */
+}
+
+/* Instagram Logo */
+.instagram-logo {
+    width: 24px; /* Adjusted size */
+    height: 24px;
+    margin-left: 8px; /* Small space after "Club" */
+}
+
+/* Responsive styles for medium screens (Samsung phones, tablets) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .favicon-logo {
+        width: 40px;
+    }
+    .college-name {
+        font-size: 16px;
+    }
+    .site-title {
+        font-size: 14px;
+    }
+    .label-button-container h3 {
+        font-size: 16px;
+    }
+    button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .button-row {
+        gap: 15px;
+    }
+}
+
+/* Responsive styles for smaller screens (Samsung phones) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .favicon-logo {
+        width: 30px;
+    }
+    .college-name {
+        font-size: 16px;
+    }
+    .site-title {
+        font-size: 14px;
+    }
+    .label-button-container h3 {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .button-row {
+        gap: 15px;
+    }
+}
